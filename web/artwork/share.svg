@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><radialGradient id="g"><stop stop-color="#10352b"/><stop offset="1" stop-color="#07090e"/></radialGradient></defs>
+<rect width="1200" height="630" fill="#07090e"/><rect x="540" width="660" height="630" fill="url(#g)"/>
+<path d="M70 102V58h37l19 16-16 13 18 18h-22L88 87v15zm18-28h18l-7-7H88z" fill="#00ff9d"/>
+<text x="145" y="99" fill="#f0f4f8" font-family="Arial,sans-serif" font-size="42" font-weight="700">REKTD<tspan fill="#00ff9d">.</tspan></text>
+<text x="70" y="245" fill="#f0f4f8" font-family="Arial,sans-serif" font-size="66" font-weight="700">The last</text><text x="70" y="323" fill="#f0f4f8" font-family="Arial,sans-serif" font-size="66" font-weight="700">buy wins<tspan fill="#00ff9d">.</tspan></text>
+<text x="73" y="385" fill="#9ca9bb" font-family="Arial,sans-serif" font-size="24">The ten-minute jackpot arena.</text>
+<rect x="690" y="160" width="430" height="290" rx="20" fill="#0e131f" stroke="#263143"/><text x="722" y="204" fill="#9ca9bb" font-family="Arial,sans-serif" font-size="20">One pool. One last buyer.</text><text x="733" y="331" fill="#00ff9d" font-family="monospace" font-size="100" font-weight="600">10:00</text><rect x="727" y="379" width="356" height="5" rx="2" fill="#00ff9d"/>
+<path d="M70 510h1050" stroke="#263143"/><text x="70" y="559" fill="#9ca9bb" font-family="Arial,sans-serif" font-size="22">REKTD / ETH</text><text x="1120" y="559" fill="#9ca9bb" font-family="Arial,sans-serif" font-size="22" text-anchor="end">Robinhood Chain</text></svg>

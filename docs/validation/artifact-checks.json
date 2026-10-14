@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-14T20:17:52.597644+00:00",
+  "passed": true,
+  "deployedSourceCommit": "2c3fa8ceac98516fa7bd67dea3a9bb63582b1670",
+  "handoffCopiesMatchPinnedInputBytes": true,
+  "exactManifestAndNetworkBinding": true,
+  "legacyHandoffHasNoPoolKey": true,
+  "contracts": 2,
+  "assets": 20,
+  "assetBytes": 1086491,
+  "exportBytesIncludingManifest": 1091364,
+  "largestAssetBytes": 634149,
+  "manifestSha256": "b6333cc57b00e4ffcc71270641ecf4de89aec80f686aece2d7d59c85152171a1",
+  "allAssetHashesChecked": true,
+  "originalTrackedFilesChanged": [],
+  "forbiddenDependencyArtifacts": [],
+  "gitSubmodules": [],
+  "typecheck": {
+    "passed": true,
+    "command": "npm --prefix web run typecheck"
+  },
+  "unitTests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "npm --prefix web run test"
+  },
+  "build": {
+    "passed": true,
+    "command": "npm --prefix web run build"
+  },
+  "browserTests": {
+    "passed": 27,
+    "failed": 0,
+    "evidence": "browser-tests.json"
+  }
+}

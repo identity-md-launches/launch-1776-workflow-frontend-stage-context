@@ -1,0 +1,6 @@
+{
+  "fee": 12500,
+  "tickSpacing": 60,
+  "pairedCurrency": "0x0000000000000000000000000000000000000000",
+  "deploymentBlock": 88621730
+}

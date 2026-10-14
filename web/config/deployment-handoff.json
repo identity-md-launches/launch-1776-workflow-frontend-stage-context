@@ -1,0 +1,57 @@
+{
+  "chainId": 4663,
+  "repoUrl": "https://github.com/identity-md-launches/launch-1768-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "5137d9df-2834-487b-8d14-77b9036e13fb",
+  "manifest": {
+    "hook": {
+      "contract": "RektJackpotHook",
+      "permissions": [
+        "beforeInitialize",
+        "beforeSwap",
+        "afterSwap",
+        "beforeSwapReturnDelta",
+        "afterSwapReturnDelta"
+      ],
+      "constructorArgs": [
+        "$poolManager",
+        "$owner"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 12500,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "RektJackpotHook serves the REKTD/native ETH pool. RektdToken has no constructor arguments. The hook constructor takes only the PoolManager and owner; $owner is also the initial creatorFeeRecipient. beforeInitialize requires a PoolManager caller, native ETH as currency0 and no previously registered pool; it records currency1 as the launch token. It accepts initialization from any sender, including the launch factory, and does not restrict fee or tick spacing, so it accepts the declared 12500 LP fee and spacing 60. There are no token or factory constructor parameters. All enabled callbacks require the PoolManager. The 1% ETH hook fee is additional to the 1.25% LP fee: beforeSwap returns the fee delta when ETH is specified, afterSwap returns it when REKTD is specified, and afterSwap mints ERC-6909 ETH claims to the hook. No ETH is transferred during swaps. Half of each hook fee, rounded down, accrues to pendingCreatorFees and the remainder to jackpotPool. Any router may swap or quote. A 32-byte hookData address identifies the buyer; other lengths use tx.origin. Zero, burn-address and malformed 32-byte buyers still pay fees but cannot become leader. A qualifying buy has gross ETH in (the ETH the pool actually took plus the hook fee, not merely the amount specified) of at least max(0.0005 ETH, ceil(5% of jackpotPool)) using the jackpot before this swap's fee. It starts a 600-second round or extends it by 120 seconds, capped at 600 seconds from the current block time. An exact-output sell reverts with EthOutputNotFilled when the pool cannot produce the requested ETH plus the fee. Expired rounds allocate 60% of the jackpot to the leader, 20% to the burn address and the remainder to rollover. beforeSwap records expired-round payouts in unclaimedPayout without transfers. Permissionless settleRound(), claimCreatorFees() and claimPayout(address) redeem claims through PoolManager.unlock. A prize or burn amount the recipient rejects is parked in unclaimedPayout and stays claimable; once parked for PARK_GRACE_PERIOD (1 day) anyone may call recycleParkedPayout(address), which retries delivery and otherwise returns the amount to jackpotPool. claimCreatorFees() reverts, leaving pendingCreatorFees intact, when the recipient rejects ETH. The owner may change creatorFeeRecipient, which also redirects pending creator fees not yet claimed. No liquidity callbacks are enabled. initialPrice records the required one-to-one reference; the deployer derives the opening price from the separate launch policy's opening market cap and deployed token address.",
+    "token": {
+      "name": "REKTD",
+      "symbol": "REKTD",
+      "contract": "RektdToken",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "RektdToken",
+      "txHash": "0xe85ad347afb549dfef0b6146cd4546f647f4db2decceceb4a1599d4702022aaf",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "address": "0x81532372827817ac1c0b0f077fb29184065c8826",
+      "blockNumber": 88621730,
+      "creationCodeHash": "4fcb6989770065c54c983a65d7c651b8a55ce07786552ae72497388ebe27ff8b"
+    },
+    {
+      "name": "RektJackpotHook",
+      "txHash": "0xe85ad347afb549dfef0b6146cd4546f647f4db2decceceb4a1599d4702022aaf",
+      "abiHash": "1e5328e2e27a3e43fefb146d3ccfb4e72641801942ed156db374ced146e41752",
+      "address": "0xd0a554c9a137604affbd23e5ced84969d57ca0cc",
+      "blockNumber": 88621730,
+      "creationCodeHash": "bfbca2464b9222d7fa41e4df739be938e85fb6055d8a532b77b3fd93866f9360"
+    }
+  ],
+  "sourceCommit": "2c3fa8ceac98516fa7bd67dea3a9bb63582b1670",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "9ea94fa7fcc0b9a4edd089680b73ab8e7d6b8242539c1741b7dd2e091a1cb25f"
+}

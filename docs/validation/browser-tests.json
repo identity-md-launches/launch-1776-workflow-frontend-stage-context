@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-14T20:15:39.265Z",
+  "export": "dist/ at a gateway-style /arena/ subpath",
+  "mocks": "All wallet and RPC requests in this suite are mocked. No live transaction is possible.",
+  "checks": [
+    {
+      "name": "Static gateway subpath, live reads and disabled disconnected action",
+      "passed": true
+    },
+    {
+      "name": "390 first screen, 320/760/1440 reflow and local fonts",
+      "passed": true
+    },
+    {
+      "name": "Wallet modal keyboard containment, Escape and focus return",
+      "passed": true
+    },
+    {
+      "name": "Wallet rejection has a recoverable inline error",
+      "passed": true
+    },
+    {
+      "name": "Wrong chain rejection, exact add-chain fallback, re-switch and action gate",
+      "passed": true
+    },
+    {
+      "name": "Dynamic minimum preset, input/slippage validation and gas-reserved Max",
+      "passed": true
+    },
+    {
+      "name": "Buy review, simulation before signing and pending lock through receipt",
+      "passed": true
+    },
+    {
+      "name": "Simulation revert blocks signing and explains slippage",
+      "passed": true
+    },
+    {
+      "name": "Wallet transaction rejection returns control to idle",
+      "passed": true
+    },
+    {
+      "name": "Sell is exactly token approval → Permit2 approval → simulated swap with no ETH value",
+      "passed": true
+    },
+    {
+      "name": "Settle, payout, creator claim and recovery use the deployed ABI, recipient and prerequisites",
+      "passed": true
+    },
+    {
+      "name": "Owner-only setup has validated addresses and a concrete confirmation",
+      "passed": true
+    },
+    {
+      "name": "Account changes invalidate balances and owner controls; long values do not overflow",
+      "passed": true
+    },
+    {
+      "name": "Axe accessibility scan and zero app script/resource failures",
+      "passed": true
+    },
+    {
+      "name": "Fail-closed gate: missing contract code",
+      "passed": true
+    },
+    {
+      "name": "Fail-closed gate: RPC chain mismatch",
+      "passed": true
+    },
+    {
+      "name": "Fail-closed gate: RPC outage",
+      "passed": true
+    },
+    {
+      "name": "A correct-chain wallet recovers reads when both public RPCs fail",
+      "passed": true
+    },
+    {
+      "name": "A stale chain timestamp disables actions even after a fresh RPC response",
+      "passed": true
+    },
+    {
+      "name": "Phone without provider offers four wallet-browser links and Coinbase Smart Wallet",
+      "passed": true
+    },
+    {
+      "name": "A failed quote cannot be signed and can recover",
+      "passed": true
+    },
+    {
+      "name": "A reverted receipt is failure, not a successful or permanently pending swap",
+      "passed": true
+    },
+    {
+      "name": "A frozen review expires even when background quotes refresh",
+      "passed": true
+    },
+    {
+      "name": "Tampered application ABI blocks startup",
+      "passed": true
+    },
+    {
+      "name": "Owner transfer: confirmation persists after owner access is removed",
+      "passed": true
+    },
+    {
+      "name": "Owner renounce: confirmation persists after owner access is removed",
+      "passed": true
+    },
+    {
+      "name": "WebKit: mobile layout, wallet connection and buy review",
+      "passed": true
+    }
+  ],
+  "measurements": [
+    {
+      "label": "disconnected",
+      "width": 390,
+      "documentWidth": 390,
+      "buttonBottom": 807.734375,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "label": "disconnected",
+      "width": 320,
+      "documentWidth": 320,
+      "buttonBottom": 846.515625,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "label": "disconnected",
+      "width": 760,
+      "documentWidth": 760,
+      "buttonBottom": 807.734375,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "label": "disconnected",
+      "width": 1440,
+      "documentWidth": 1440,
+      "buttonBottom": 727.15625,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "label": "disconnected",
+      "width": 390,
+      "documentWidth": 390,
+      "buttonBottom": 807.734375,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "label": "large wallet balance and full address",
+      "width": 320,
+      "documentWidth": 320,
+      "buttonBottom": 834.921875,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "label": "connected normal state",
+      "width": 390,
+      "documentWidth": 390,
+      "buttonBottom": 807.734375,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    },
+    {
+      "label": "WebKit",
+      "width": 390,
+      "documentWidth": 390,
+      "buttonBottom": 807.734375,
+      "fonts": [
+        "Manrope",
+        "JetBrains Mono"
+      ]
+    }
+  ],
+  "limitations": [],
+  "passed": true,
+  "count": 27
+}

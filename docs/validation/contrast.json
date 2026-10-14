@@ -1,0 +1,237 @@
+{
+  "method": "WCAG relative luminance calculated from implemented CSS sRGB tokens. This supplements the rendered probe; it does not claim a pixel-by-pixel gradient, opacity or disabled-state audit. Round gradient endpoints are #0f2627 and #0e131f; tested the brighter endpoint for the round text. Crimson is large countdown text only.",
+  "checks": [
+    {
+      "foreground": "text",
+      "background": "surface",
+      "colors": [
+        "#f0f4f8",
+        "#0e131f"
+      ],
+      "ratio": 16.79,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "text",
+      "background": "surface-hover",
+      "colors": [
+        "#f0f4f8",
+        "#182131"
+      ],
+      "ratio": 14.61,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "text",
+      "background": "field",
+      "colors": [
+        "#f0f4f8",
+        "#080d15"
+      ],
+      "ratio": 17.61,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "text",
+      "background": "page",
+      "colors": [
+        "#f0f4f8",
+        "#07090e"
+      ],
+      "ratio": 18.02,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "surface",
+      "colors": [
+        "#9ca9bb",
+        "#0e131f"
+      ],
+      "ratio": 7.78,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "surface-hover",
+      "colors": [
+        "#9ca9bb",
+        "#182131"
+      ],
+      "ratio": 6.77,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "field",
+      "colors": [
+        "#9ca9bb",
+        "#080d15"
+      ],
+      "ratio": 8.16,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "page",
+      "colors": [
+        "#9ca9bb",
+        "#07090e"
+      ],
+      "ratio": 8.35,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "surface",
+      "colors": [
+        "#00ff9d",
+        "#0e131f"
+      ],
+      "ratio": 13.95,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "surface-hover",
+      "colors": [
+        "#00ff9d",
+        "#182131"
+      ],
+      "ratio": 12.14,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "field",
+      "colors": [
+        "#00ff9d",
+        "#080d15"
+      ],
+      "ratio": 14.64,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "page",
+      "colors": [
+        "#00ff9d",
+        "#07090e"
+      ],
+      "ratio": 14.98,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "error",
+      "background": "surface",
+      "colors": [
+        "#ff8097",
+        "#0e131f"
+      ],
+      "ratio": 7.76,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "error",
+      "background": "surface-hover",
+      "colors": [
+        "#ff8097",
+        "#182131"
+      ],
+      "ratio": 6.76,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "error",
+      "background": "field",
+      "colors": [
+        "#ff8097",
+        "#080d15"
+      ],
+      "ratio": 8.15,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "error",
+      "background": "page",
+      "colors": [
+        "#ff8097",
+        "#07090e"
+      ],
+      "ratio": 8.33,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "text",
+      "background": "brightest round gradient endpoint",
+      "colors": [
+        "#f0f4f8",
+        "#0f2627"
+      ],
+      "ratio": 14.32,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "muted",
+      "background": "brightest round gradient endpoint",
+      "colors": [
+        "#9ca9bb",
+        "#0f2627"
+      ],
+      "ratio": 6.64,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "foreground": "accent",
+      "background": "brightest round gradient endpoint",
+      "colors": [
+        "#00ff9d",
+        "#0f2627"
+      ],
+      "ratio": 11.9,
+      "required": 3,
+      "passed": true
+    },
+    {
+      "foreground": "danger",
+      "background": "brightest round gradient endpoint",
+      "colors": [
+        "#ff2e54",
+        "#0f2627"
+      ],
+      "ratio": 4.35,
+      "required": 3,
+      "passed": true
+    },
+    {
+      "foreground": "primary button text",
+      "background": "primary button fill",
+      "colors": [
+        "#07090e",
+        "#00ff9d"
+      ],
+      "ratio": 14.98,
+      "required": 4.5,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

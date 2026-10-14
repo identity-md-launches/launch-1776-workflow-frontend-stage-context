@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-14T19:52:11.477Z",
+  "readOnly": true,
+  "chainId": 4663,
+  "contracts": [
+    {
+      "name": "RektdToken",
+      "address": "0x81532372827817ac1c0b0f077fb29184065c8826",
+      "byteLength": 1740,
+      "runtimeCodeKeccak": "0x934966033d1f43af621f9bea10c7d14a6cd31bdc357edfe9d6b1d79d51742985"
+    },
+    {
+      "name": "RektJackpotHook",
+      "address": "0xd0a554c9a137604affbd23e5ced84969d57ca0cc",
+      "byteLength": 9062,
+      "runtimeCodeKeccak": "0xa838a86659c9d841df8dea46f708d91a741ae7d9fa27ce67ddb72f7cddf98140"
+    },
+    {
+      "name": "poolManager",
+      "address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+      "byteLength": 24009
+    },
+    {
+      "name": "universalRouter",
+      "address": "0x8876789976decbfcbbbe364623c63652db8c0904",
+      "byteLength": 24546
+    },
+    {
+      "name": "quoter",
+      "address": "0x8dc178efb8111bb0973dd9d722ebeff267c98f94",
+      "byteLength": 6118
+    },
+    {
+      "name": "permit2",
+      "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+      "byteLength": 9152
+    }
+  ],
+  "state": {
+    "poolInitialized": true,
+    "poolId": "0x835a43006b44830fb5e2859313b44aa9708ab0870cf6747e694229efe47bb9bc",
+    "poolManager": "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+    "launchToken": "0x81532372827817Ac1c0B0F077Fb29184065C8826",
+    "owner": "0x08cD4437B077928E7fA09CF7dcDf3F7624743Bd2",
+    "creatorFeeRecipient": "0x08cD4437B077928E7fA09CF7dcDf3F7624743Bd2",
+    "jackpotPool": "0",
+    "minimumTicket": "500000000000000",
+    "roundId": "0",
+    "currentLeader": "0x0000000000000000000000000000000000000000",
+    "roundExpired": false,
+    "totalBurned": "0"
+  },
+  "quotes": {
+    "buy": {
+      "amountIn": "500000000000000",
+      "amountOut": "48800043433817201622058",
+      "gasEstimate": "195811",
+      "simulated": true
+    },
+    "sell": {
+      "error": "The contract function \"quoteExactInputSingle\" reverted with the following signature:\n0x6190b2b0"
+    }
+  },
+  "limitations": [
+    "No transactions broadcast. Wallet signatures, approvals, fills and payouts with real funds were not tested. Nonempty code and matching reads do not independently attest runtime bytecode."
+  ],
+  "poolIdMatches": true
+}
